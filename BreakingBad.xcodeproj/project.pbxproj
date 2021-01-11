@@ -11,7 +11,26 @@
 		73BF3AC725ACE4ED00032D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3AC625ACE4ED00032D18 /* Assets.xcassets */; };
 		73BF3ACA25ACE4ED00032D18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3AC825ACE4ED00032D18 /* LaunchScreen.storyboard */; };
 		73BF3AD925ACE5D900032D18 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3AD825ACE5D900032D18 /* main.swift */; };
+		73BF3AE325ACE6C800032D18 /* BreakingBadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3AE225ACE6C800032D18 /* BreakingBadTests.swift */; };
+		73BF3AF325ACE6ED00032D18 /* BreakingBadSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3AF225ACE6ED00032D18 /* BreakingBadSnapshotTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73BF3AE525ACE6C800032D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73BF3AB225ACE4EC00032D18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73BF3AB925ACE4EC00032D18;
+			remoteInfo = BreakingBad;
+		};
+		73BF3AF525ACE6ED00032D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73BF3AB225ACE4EC00032D18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73BF3AB925ACE4EC00032D18;
+			remoteInfo = BreakingBad;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		73BF3ABA25ACE4EC00032D18 /* BreakingBad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBad.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,10 +39,30 @@
 		73BF3AC925ACE4ED00032D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73BF3ACB25ACE4ED00032D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73BF3AD825ACE5D900032D18 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		73BF3AE025ACE6C800032D18 /* BreakingBadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakingBadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BF3AE225ACE6C800032D18 /* BreakingBadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadTests.swift; sourceTree = "<group>"; };
+		73BF3AE425ACE6C800032D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73BF3AF025ACE6ED00032D18 /* BreakingBadSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakingBadSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BF3AF225ACE6ED00032D18 /* BreakingBadSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadSnapshotTests.swift; sourceTree = "<group>"; };
+		73BF3AF425ACE6ED00032D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		73BF3AB725ACE4EC00032D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BF3ADD25ACE6C800032D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BF3AED25ACE6ED00032D18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				73BF3ABC25ACE4EC00032D18 /* BreakingBad */,
+				73BF3AE125ACE6C800032D18 /* BreakingBadTests */,
+				73BF3AF125ACE6ED00032D18 /* BreakingBadSnapshotTests */,
 				73BF3ABB25ACE4EC00032D18 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				73BF3ABA25ACE4EC00032D18 /* BreakingBad.app */,
+				73BF3AE025ACE6C800032D18 /* BreakingBadTests.xctest */,
+				73BF3AF025ACE6ED00032D18 /* BreakingBadSnapshotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +112,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		73BF3AE125ACE6C800032D18 /* BreakingBadTests */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3AE225ACE6C800032D18 /* BreakingBadTests.swift */,
+				73BF3AE425ACE6C800032D18 /* Info.plist */,
+			);
+			path = BreakingBadTests;
+			sourceTree = "<group>";
+		};
+		73BF3AF125ACE6ED00032D18 /* BreakingBadSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3AF225ACE6ED00032D18 /* BreakingBadSnapshotTests.swift */,
+				73BF3AF425ACE6ED00032D18 /* Info.plist */,
+			);
+			path = BreakingBadSnapshotTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +150,42 @@
 			productReference = 73BF3ABA25ACE4EC00032D18 /* BreakingBad.app */;
 			productType = "com.apple.product-type.application";
 		};
+		73BF3ADF25ACE6C800032D18 /* BreakingBadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73BF3AE725ACE6C800032D18 /* Build configuration list for PBXNativeTarget "BreakingBadTests" */;
+			buildPhases = (
+				73BF3ADC25ACE6C800032D18 /* Sources */,
+				73BF3ADD25ACE6C800032D18 /* Frameworks */,
+				73BF3ADE25ACE6C800032D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73BF3AE625ACE6C800032D18 /* PBXTargetDependency */,
+			);
+			name = BreakingBadTests;
+			productName = BreakingBadTests;
+			productReference = 73BF3AE025ACE6C800032D18 /* BreakingBadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73BF3AEF25ACE6ED00032D18 /* BreakingBadSnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73BF3AF725ACE6ED00032D18 /* Build configuration list for PBXNativeTarget "BreakingBadSnapshotTests" */;
+			buildPhases = (
+				73BF3AEC25ACE6ED00032D18 /* Sources */,
+				73BF3AED25ACE6ED00032D18 /* Frameworks */,
+				73BF3AEE25ACE6ED00032D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73BF3AF625ACE6ED00032D18 /* PBXTargetDependency */,
+			);
+			name = BreakingBadSnapshotTests;
+			productName = BreakingBadSnapshotTests;
+			productReference = 73BF3AF025ACE6ED00032D18 /* BreakingBadSnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,6 +197,14 @@
 				TargetAttributes = {
 					73BF3AB925ACE4EC00032D18 = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					73BF3ADF25ACE6C800032D18 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 73BF3AB925ACE4EC00032D18;
+					};
+					73BF3AEF25ACE6ED00032D18 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 73BF3AB925ACE4EC00032D18;
 					};
 				};
 			};
@@ -117,6 +222,8 @@
 			projectRoot = "";
 			targets = (
 				73BF3AB925ACE4EC00032D18 /* BreakingBad */,
+				73BF3ADF25ACE6C800032D18 /* BreakingBadTests */,
+				73BF3AEF25ACE6ED00032D18 /* BreakingBadSnapshotTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +235,20 @@
 			files = (
 				73BF3ACA25ACE4ED00032D18 /* LaunchScreen.storyboard in Resources */,
 				73BF3AC725ACE4ED00032D18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BF3ADE25ACE6C800032D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BF3AEE25ACE6ED00032D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +264,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		73BF3ADC25ACE6C800032D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73BF3AE325ACE6C800032D18 /* BreakingBadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BF3AEC25ACE6ED00032D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73BF3AF325ACE6ED00032D18 /* BreakingBadSnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73BF3AE625ACE6C800032D18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73BF3AB925ACE4EC00032D18 /* BreakingBad */;
+			targetProxy = 73BF3AE525ACE6C800032D18 /* PBXContainerItemProxy */;
+		};
+		73BF3AF625ACE6ED00032D18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73BF3AB925ACE4EC00032D18 /* BreakingBad */;
+			targetProxy = 73BF3AF525ACE6ED00032D18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		73BF3AC825ACE4ED00032D18 /* LaunchScreen.storyboard */ = {
@@ -309,6 +459,86 @@
 			};
 			name = Release;
 		};
+		73BF3AE825ACE6C800032D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BreakingBadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.mwangops.BreakingBadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakingBad.app/BreakingBad";
+			};
+			name = Debug;
+		};
+		73BF3AE925ACE6C800032D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BreakingBadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.mwangops.BreakingBadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakingBad.app/BreakingBad";
+			};
+			name = Release;
+		};
+		73BF3AF825ACE6ED00032D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BreakingBadSnapshotTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.mwangops.BreakingBadSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakingBad.app/BreakingBad";
+			};
+			name = Debug;
+		};
+		73BF3AF925ACE6ED00032D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BreakingBadSnapshotTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.mwangops.BreakingBadSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakingBad.app/BreakingBad";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -326,6 +556,24 @@
 			buildConfigurations = (
 				73BF3ACF25ACE4ED00032D18 /* Debug */,
 				73BF3AD025ACE4ED00032D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73BF3AE725ACE6C800032D18 /* Build configuration list for PBXNativeTarget "BreakingBadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BF3AE825ACE6C800032D18 /* Debug */,
+				73BF3AE925ACE6C800032D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73BF3AF725ACE6ED00032D18 /* Build configuration list for PBXNativeTarget "BreakingBadSnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BF3AF825ACE6ED00032D18 /* Debug */,
+				73BF3AF925ACE6ED00032D18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
