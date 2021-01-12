@@ -7,13 +7,13 @@
 
 import UIKit
 
-final class iPhoneDependencyProvider: DependencyFactory {
+class iPhoneDependencyProvider: DependencyFactory {
 
     private let navController = UINavigationController()
     var rootViewController: UIViewController {
         return navController
     }
-    private let remoteRequester: DataProvider = URLSession.shared
+    let remoteRequester: DataProvider = URLSession.shared
     private lazy var imageProvider: ImageProvider = CacheableImageProvider(hasher: MD5HashGenerator(),
                                                                       localImageProvider: FileManager.default,
                                                                       remoteImageProvider: RemoteImageProvider(requester: remoteRequester))

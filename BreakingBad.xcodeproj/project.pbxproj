@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -94,6 +94,9 @@
 		73BF3D8925AD9A0000032D18 /* Box+CharacterListViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D8825AD9A0000032D18 /* Box+CharacterListViewable.swift */; };
 		73BF3D9025AD9A6400032D18 /* Box+FilterSelectionInteractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D8F25AD9A6400032D18 /* Box+FilterSelectionInteractable.swift */; };
 		73BF3D9725AD9A9800032D18 /* Box+CharacterSelectionInteractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D9625AD9A9800032D18 /* Box+CharacterSelectionInteractable.swift */; };
+		73BF3DA525ADA11800032D18 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 73BF3DA425ADA11800032D18 /* SnapshotTesting */; };
+		73BF3DBA25ADA42400032D18 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3DB925ADA42400032D18 /* response.json */; };
+		73BF3DBE25ADA5E300032D18 /* snapshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3DB225ADA3D100032D18 /* snapshot.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +210,8 @@
 		73BF3D8825AD9A0000032D18 /* Box+CharacterListViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Box+CharacterListViewable.swift"; sourceTree = "<group>"; };
 		73BF3D8F25AD9A6400032D18 /* Box+FilterSelectionInteractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Box+FilterSelectionInteractable.swift"; sourceTree = "<group>"; };
 		73BF3D9625AD9A9800032D18 /* Box+CharacterSelectionInteractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Box+CharacterSelectionInteractable.swift"; sourceTree = "<group>"; };
+		73BF3DB225ADA3D100032D18 /* snapshot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snapshot.jpg; sourceTree = "<group>"; };
+		73BF3DB925ADA42400032D18 /* response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +233,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BF3DA525ADA11800032D18 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +298,7 @@
 		73BF3AF125ACE6ED00032D18 /* BreakingBadSnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
+				73BF3DA925ADA3B200032D18 /* Helpers */,
 				73BF3AF225ACE6ED00032D18 /* BreakingBadSnapshotTests.swift */,
 				73BF3AF425ACE6ED00032D18 /* Info.plist */,
 			);
@@ -573,6 +580,15 @@
 			path = MemoryManagement;
 			sourceTree = "<group>";
 		};
+		73BF3DA925ADA3B200032D18 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3DB225ADA3D100032D18 /* snapshot.jpg */,
+				73BF3DB925ADA42400032D18 /* response.json */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -625,6 +641,9 @@
 				73BF3AF625ACE6ED00032D18 /* PBXTargetDependency */,
 			);
 			name = BreakingBadSnapshotTests;
+			packageProductDependencies = (
+				73BF3DA425ADA11800032D18 /* SnapshotTesting */,
+			);
 			productName = BreakingBadSnapshotTests;
 			productReference = 73BF3AF025ACE6ED00032D18 /* BreakingBadSnapshotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -661,6 +680,9 @@
 				Base,
 			);
 			mainGroup = 73BF3AB125ACE4EC00032D18;
+			packageReferences = (
+				73BF3DA325ADA11800032D18 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = 73BF3ABB25ACE4EC00032D18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -702,6 +724,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BF3DBA25ADA42400032D18 /* response.json in Resources */,
+				73BF3DBE25ADA5E300032D18 /* snapshot.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1107,6 +1131,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		73BF3DA325ADA11800032D18 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		73BF3DA425ADA11800032D18 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73BF3DA325ADA11800032D18 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 73BF3AB225ACE4EC00032D18 /* Project object */;
 }

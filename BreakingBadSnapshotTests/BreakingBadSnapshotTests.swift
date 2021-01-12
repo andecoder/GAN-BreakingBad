@@ -6,27 +6,56 @@
 //
 
 import XCTest
+import SnapshotTesting
+@testable import BreakingBad
 
-class BreakingBadSnapshotTests: XCTestCase {
+final class BreakingBadSnapshotTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testApp() throws {
+        LayoutConfigurator.applyLayoutAppearance()
+        let dependenciesProvider = MockDependenciesProvider()
+        let appComposer = AppComposer(dependencyProvider: dependenciesProvider, window: UIWindow())
+        appComposer.launchInitialScreen()
+        assertSnapshot(matching: dependenciesProvider.rootViewController, as: .image)
+
+        let character = Character(id: 20, name: "UI Testing", occupation: ["Snapshot"], imageUrl: URL(string: "www.google.com")!, status: "Alive and well", nickName: "Automated testing", appearance: [1, 2, 3, 4, 5])
+        (dependenciesProvider.mainRouter as! CharacterExplorerRouter).displayDetails(for: character)
+        assertSnapshot(matching: dependenciesProvider.rootViewController, as: .image)
     }
+}
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+private final class MockDependenciesProvider: DependencyFactory {
+    let navController = UINavigationController()
+    var rootViewController: UIViewController { navController }
+    lazy var sceneFactory: CharacterExplorerSceneFactory = CharacterExplorerSceneComposer(imageProvider: FakeImageProvider(),
+                                                                                          remoteDataProvider: FakeRemoteRequester())
+    lazy var mainRouter: Routable = CharacterExplorerRouter(navigationController: navController,
+                                                            sceneFactory: sceneFactory)
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    final class FakeImageProvider: ImageProvider {
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+        func fetchImage(from url: URL, completion: @escaping (Result<UIImage?, Error>) -> Void) -> Cancellable {
+            let bundle = Bundle(for: BreakingBadSnapshotTests.self)
+            let imageURL = bundle.url(forResource: "snapshot", withExtension: "jpg")!
+            let image = UIImage(contentsOfFile: imageURL.path)
+            completion(.success(image))
+            return FakeCancellable()
         }
     }
 
+    final class FakeCancellable: Cancellable {
+
+        func cancel() { }
+    }
+
+    final class FakeRemoteRequester: DataProvider {
+
+        func fetchData(from url: URL, completion: @escaping (Result<Data, Error>) -> Void) -> Cancellable {
+            let bundle = Bundle(for: BreakingBadSnapshotTests.self)
+            let jsonURL = bundle.url(forResource: "response", withExtension: "json")!
+            let data = try! Data(contentsOf: jsonURL)
+            completion(.success(data))
+            return FakeCancellable()
+        }
+    }
 }
