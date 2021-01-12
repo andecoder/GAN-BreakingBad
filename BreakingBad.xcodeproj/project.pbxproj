@@ -13,6 +13,7 @@
 		73BF3AD925ACE5D900032D18 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3AD825ACE5D900032D18 /* main.swift */; };
 		73BF3AE325ACE6C800032D18 /* BreakingBadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3AE225ACE6C800032D18 /* BreakingBadTests.swift */; };
 		73BF3AF325ACE6ED00032D18 /* BreakingBadSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3AF225ACE6ED00032D18 /* BreakingBadSnapshotTests.swift */; };
+		73BF3B2D25AD327F00032D18 /* LayoutConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B2C25AD327F00032D18 /* LayoutConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		73BF3AF025ACE6ED00032D18 /* BreakingBadSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakingBadSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BF3AF225ACE6ED00032D18 /* BreakingBadSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadSnapshotTests.swift; sourceTree = "<group>"; };
 		73BF3AF425ACE6ED00032D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73BF3B2C25AD327F00032D18 /* LayoutConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				73BF3AC625ACE4ED00032D18 /* Assets.xcassets */,
 				73BF3AC825ACE4ED00032D18 /* LaunchScreen.storyboard */,
 				73BF3ACB25ACE4ED00032D18 /* Info.plist */,
+				73BF3B2C25AD327F00032D18 /* LayoutConfigurator.swift */,
 				73BF3AD825ACE5D900032D18 /* main.swift */,
 			);
 			name = "Supporting Files";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BF3AD925ACE5D900032D18 /* main.swift in Sources */,
+				73BF3B2D25AD327F00032D18 /* LayoutConfigurator.swift in Sources */,
 				73BF3ABE25ACE4EC00032D18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
