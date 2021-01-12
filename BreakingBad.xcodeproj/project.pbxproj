@@ -53,6 +53,9 @@
 		73BF3C7725AD6A4F00032D18 /* CollectionViewInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C7625AD6A4F00032D18 /* CollectionViewInteractorSpy.swift */; };
 		73BF3C8225AD6AF600032D18 /* CollectionViewCellSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C8025AD6AF600032D18 /* CollectionViewCellSpy.swift */; };
 		73BF3C8325AD6AF600032D18 /* CollectionViewCellSpy.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3C8125AD6AF600032D18 /* CollectionViewCellSpy.xib */; };
+		73BF3C8F25AD6C4100032D18 /* CharacterListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C8E25AD6C4100032D18 /* CharacterListInteractor.swift */; };
+		73BF3C9925AD6CA000032D18 /* CharacterListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C9825AD6CA000032D18 /* CharacterListInteractorTests.swift */; };
+		73BF3C9E25AD6DF800032D18 /* SearchInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C9D25AD6DF800032D18 /* SearchInteractorSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +128,9 @@
 		73BF3C7625AD6A4F00032D18 /* CollectionViewInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewInteractorSpy.swift; sourceTree = "<group>"; };
 		73BF3C8025AD6AF600032D18 /* CollectionViewCellSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellSpy.swift; sourceTree = "<group>"; };
 		73BF3C8125AD6AF600032D18 /* CollectionViewCellSpy.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCellSpy.xib; sourceTree = "<group>"; };
+		73BF3C8E25AD6C4100032D18 /* CharacterListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListInteractor.swift; sourceTree = "<group>"; };
+		73BF3C9825AD6CA000032D18 /* CharacterListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListInteractorTests.swift; sourceTree = "<group>"; };
+		73BF3C9D25AD6DF800032D18 /* SearchInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +295,7 @@
 				73BF3B7F25AD3B8D00032D18 /* CharacterListViewController.swift */,
 				73BF3B8025AD3B8D00032D18 /* CharacterListViewController.xib */,
 				73BF3C6525AD652800032D18 /* CollectionViewCellProvider.swift */,
+				73BF3C8E25AD6C4100032D18 /* CharacterListInteractor.swift */,
 			);
 			path = CharacterList;
 			sourceTree = "<group>";
@@ -359,6 +366,7 @@
 				73BF3C7625AD6A4F00032D18 /* CollectionViewInteractorSpy.swift */,
 				73BF3BC125AD465300032D18 /* DataProviderSpy.swift */,
 				73BF3BDE25AD55B700032D18 /* ImageProviderSpy.swift */,
+				73BF3C9D25AD6DF800032D18 /* SearchInteractorSpy.swift */,
 			);
 			path = Spies;
 			sourceTree = "<group>";
@@ -382,6 +390,7 @@
 				73BF3C5A25AD648B00032D18 /* Cells */,
 				73BF3C4025AD5FF800032D18 /* CharacterListViewControllerTests.swift */,
 				73BF3C6F25AD6A1600032D18 /* CollectionViewCellProviderTests.swift */,
+				73BF3C9825AD6CA000032D18 /* CharacterListInteractorTests.swift */,
 			);
 			path = CharacterList;
 			sourceTree = "<group>";
@@ -547,6 +556,7 @@
 				73BF3B3225AD336400032D18 /* AppComposer.swift in Sources */,
 				73BF3B2D25AD327F00032D18 /* LayoutConfigurator.swift in Sources */,
 				73BF3C3725AD5F0700032D18 /* CharacterCollectionViewCell.swift in Sources */,
+				73BF3C8F25AD6C4100032D18 /* CharacterListInteractor.swift in Sources */,
 				73BF3ABE25ACE4EC00032D18 /* AppDelegate.swift in Sources */,
 				73BF3B7725AD3B5A00032D18 /* CharacterDetailViewController.swift in Sources */,
 				73BF3BD525AD4BB600032D18 /* CacheableImageProvider.swift in Sources */,
@@ -563,6 +573,7 @@
 				73BF3BCA25AD466D00032D18 /* CancellableSpy.swift in Sources */,
 				73BF3B5425AD373700032D18 /* CharacterExplorerRouterTests.swift in Sources */,
 				73BF3BDF25AD55B700032D18 /* ImageProviderSpy.swift in Sources */,
+				73BF3C9E25AD6DF800032D18 /* SearchInteractorSpy.swift in Sources */,
 				73BF3C4125AD5FF800032D18 /* CharacterListViewControllerTests.swift in Sources */,
 				73BF3BB925AD45DC00032D18 /* RemoteImageProviderTests.swift in Sources */,
 				73BF3BDA25AD54A100032D18 /* CacheableImageProviderTests.swift in Sources */,
@@ -572,6 +583,7 @@
 				73BF3C0F25AD5D5A00032D18 /* MD5HashGeneratorTests.swift in Sources */,
 				73BF3C5C25AD649B00032D18 /* CharacterCollectionViewCellTests.swift in Sources */,
 				73BF3BC225AD465300032D18 /* DataProviderSpy.swift in Sources */,
+				73BF3C9925AD6CA000032D18 /* CharacterListInteractorTests.swift in Sources */,
 				73BF3B8725AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift in Sources */,
 				73BF3C7025AD6A1600032D18 /* CollectionViewCellProviderTests.swift in Sources */,
 			);
