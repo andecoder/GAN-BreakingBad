@@ -49,6 +49,10 @@
 		73BF3C5625AD642400032D18 /* CharacterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C5525AD642400032D18 /* CharacterCellViewModel.swift */; };
 		73BF3C5C25AD649B00032D18 /* CharacterCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C5B25AD649B00032D18 /* CharacterCollectionViewCellTests.swift */; };
 		73BF3C6625AD652800032D18 /* CollectionViewCellProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C6525AD652800032D18 /* CollectionViewCellProvider.swift */; };
+		73BF3C7025AD6A1600032D18 /* CollectionViewCellProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C6F25AD6A1600032D18 /* CollectionViewCellProviderTests.swift */; };
+		73BF3C7725AD6A4F00032D18 /* CollectionViewInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C7625AD6A4F00032D18 /* CollectionViewInteractorSpy.swift */; };
+		73BF3C8225AD6AF600032D18 /* CollectionViewCellSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C8025AD6AF600032D18 /* CollectionViewCellSpy.swift */; };
+		73BF3C8325AD6AF600032D18 /* CollectionViewCellSpy.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3C8125AD6AF600032D18 /* CollectionViewCellSpy.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +121,10 @@
 		73BF3C5525AD642400032D18 /* CharacterCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellViewModel.swift; sourceTree = "<group>"; };
 		73BF3C5B25AD649B00032D18 /* CharacterCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCellTests.swift; sourceTree = "<group>"; };
 		73BF3C6525AD652800032D18 /* CollectionViewCellProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellProvider.swift; sourceTree = "<group>"; };
+		73BF3C6F25AD6A1600032D18 /* CollectionViewCellProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellProviderTests.swift; sourceTree = "<group>"; };
+		73BF3C7625AD6A4F00032D18 /* CollectionViewInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewInteractorSpy.swift; sourceTree = "<group>"; };
+		73BF3C8025AD6AF600032D18 /* CollectionViewCellSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellSpy.swift; sourceTree = "<group>"; };
+		73BF3C8125AD6AF600032D18 /* CollectionViewCellSpy.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCellSpy.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +354,9 @@
 			isa = PBXGroup;
 			children = (
 				73BF3BC925AD466D00032D18 /* CancellableSpy.swift */,
+				73BF3C8025AD6AF600032D18 /* CollectionViewCellSpy.swift */,
+				73BF3C8125AD6AF600032D18 /* CollectionViewCellSpy.xib */,
+				73BF3C7625AD6A4F00032D18 /* CollectionViewInteractorSpy.swift */,
 				73BF3BC125AD465300032D18 /* DataProviderSpy.swift */,
 				73BF3BDE25AD55B700032D18 /* ImageProviderSpy.swift */,
 			);
@@ -370,6 +381,7 @@
 			children = (
 				73BF3C5A25AD648B00032D18 /* Cells */,
 				73BF3C4025AD5FF800032D18 /* CharacterListViewControllerTests.swift */,
+				73BF3C6F25AD6A1600032D18 /* CollectionViewCellProviderTests.swift */,
 			);
 			path = CharacterList;
 			sourceTree = "<group>";
@@ -499,6 +511,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BF3C8325AD6AF600032D18 /* CollectionViewCellSpy.xib in Resources */,
 				73BF3BA725AD435D00032D18 /* URLSessionTest.txt in Resources */,
 				73BF3BE425AD57E200032D18 /* cached.png in Resources */,
 			);
@@ -546,6 +559,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BF3B4025AD33D500032D18 /* AppComposerTests.swift in Sources */,
+				73BF3C7725AD6A4F00032D18 /* CollectionViewInteractorSpy.swift in Sources */,
 				73BF3BCA25AD466D00032D18 /* CancellableSpy.swift in Sources */,
 				73BF3B5425AD373700032D18 /* CharacterExplorerRouterTests.swift in Sources */,
 				73BF3BDF25AD55B700032D18 /* ImageProviderSpy.swift in Sources */,
@@ -553,11 +567,13 @@
 				73BF3BB925AD45DC00032D18 /* RemoteImageProviderTests.swift in Sources */,
 				73BF3BDA25AD54A100032D18 /* CacheableImageProviderTests.swift in Sources */,
 				73BF3B6725AD398300032D18 /* Character+Helper.swift in Sources */,
+				73BF3C8225AD6AF600032D18 /* CollectionViewCellSpy.swift in Sources */,
 				73BF3B9E25AD427F00032D18 /* URLSession+DataProviderTests.swift in Sources */,
 				73BF3C0F25AD5D5A00032D18 /* MD5HashGeneratorTests.swift in Sources */,
 				73BF3C5C25AD649B00032D18 /* CharacterCollectionViewCellTests.swift in Sources */,
 				73BF3BC225AD465300032D18 /* DataProviderSpy.swift in Sources */,
 				73BF3B8725AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift in Sources */,
+				73BF3C7025AD6A1600032D18 /* CollectionViewCellProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
