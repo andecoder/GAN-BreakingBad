@@ -25,6 +25,10 @@
 		73BF3B8125AD3B8D00032D18 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B7F25AD3B8D00032D18 /* CharacterListViewController.swift */; };
 		73BF3B8225AD3B8D00032D18 /* CharacterListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3B8025AD3B8D00032D18 /* CharacterListViewController.xib */; };
 		73BF3B8725AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B8625AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift */; };
+		73BF3B9025AD421400032D18 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B8F25AD421400032D18 /* DataProvider.swift */; };
+		73BF3B9525AD423400032D18 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B9425AD423400032D18 /* Cancellable.swift */; };
+		73BF3B9E25AD427F00032D18 /* URLSession+DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B9D25AD427F00032D18 /* URLSession+DataProviderTests.swift */; };
+		73BF3BA725AD435D00032D18 /* URLSessionTest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3BA625AD435D00032D18 /* URLSessionTest.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		73BF3B7F25AD3B8D00032D18 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
 		73BF3B8025AD3B8D00032D18 /* CharacterListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterListViewController.xib; sourceTree = "<group>"; };
 		73BF3B8625AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExplorerSceneComposerTests.swift; sourceTree = "<group>"; };
+		73BF3B8F25AD421400032D18 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		73BF3B9425AD423400032D18 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		73BF3B9D25AD427F00032D18 /* URLSession+DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+DataProviderTests.swift"; sourceTree = "<group>"; };
+		73BF3BA625AD435D00032D18 /* URLSessionTest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = URLSessionTest.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +186,7 @@
 		73BF3B4F25AD36F900032D18 /* SharedObjects */ = {
 			isa = PBXGroup;
 			children = (
-				73BF3B6025AD395300032D18 /* Character.swift */,
+				73BF3B8E25AD41EB00032D18 /* DataLayer */,
 				73BF3B5B25AD377C00032D18 /* CharacterExplorerRouter.swift */,
 				73BF3B6E25AD3AC100032D18 /* CharacterExplorerSceneComposer.swift */,
 			);
@@ -206,6 +214,7 @@
 		73BF3B5225AD372600032D18 /* SharedObjects */ = {
 			isa = PBXGroup;
 			children = (
+				73BF3B9C25AD427300032D18 /* DataLayer */,
 				73BF3B5325AD373700032D18 /* CharacterExplorerRouterTests.swift */,
 				73BF3B8625AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift */,
 			);
@@ -215,6 +224,7 @@
 		73BF3B6525AD397600032D18 /* TestHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				73BF3BA525AD433600032D18 /* TestData */,
 				73BF3B6625AD398300032D18 /* Character+Helper.swift */,
 			);
 			path = TestHelpers;
@@ -236,6 +246,32 @@
 				73BF3B7625AD3B5A00032D18 /* CharacterDetailViewController.xib */,
 			);
 			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		73BF3B8E25AD41EB00032D18 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3B9425AD423400032D18 /* Cancellable.swift */,
+				73BF3B6025AD395300032D18 /* Character.swift */,
+				73BF3B8F25AD421400032D18 /* DataProvider.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		73BF3B9C25AD427300032D18 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3B9D25AD427F00032D18 /* URLSession+DataProviderTests.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		73BF3BA525AD433600032D18 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3BA625AD435D00032D18 /* URLSessionTest.txt */,
+			);
+			path = TestData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BF3BA725AD435D00032D18 /* URLSessionTest.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +412,8 @@
 				73BF3B8125AD3B8D00032D18 /* CharacterListViewController.swift in Sources */,
 				73BF3B6125AD395300032D18 /* Character.swift in Sources */,
 				73BF3B6F25AD3AC100032D18 /* CharacterExplorerSceneComposer.swift in Sources */,
+				73BF3B9525AD423400032D18 /* Cancellable.swift in Sources */,
+				73BF3B9025AD421400032D18 /* DataProvider.swift in Sources */,
 				73BF3B3225AD336400032D18 /* AppComposer.swift in Sources */,
 				73BF3B2D25AD327F00032D18 /* LayoutConfigurator.swift in Sources */,
 				73BF3ABE25ACE4EC00032D18 /* AppDelegate.swift in Sources */,
@@ -389,6 +428,7 @@
 				73BF3B4025AD33D500032D18 /* AppComposerTests.swift in Sources */,
 				73BF3B5425AD373700032D18 /* CharacterExplorerRouterTests.swift in Sources */,
 				73BF3B6725AD398300032D18 /* Character+Helper.swift in Sources */,
+				73BF3B9E25AD427F00032D18 /* URLSession+DataProviderTests.swift in Sources */,
 				73BF3B8725AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,10 +10,6 @@ import XCTest
 
 final class CharacterExplorerRouterTests: XCTestCase {
 
-    private let navController = UINavigationController()
-    private let spySceneFactory = CharacterExplorerSceneFactorySpy()
-    private lazy var sut = CharacterExplorerRouter(navigationController: navController, sceneFactory: spySceneFactory)
-
     func test_displayFirstScreen_pushesTheCorrectScreenToNavStack() {
         XCTAssertTrue(navController.viewControllers.isEmpty)
         sut.displayFirstScreen()
@@ -35,6 +31,10 @@ final class CharacterExplorerRouterTests: XCTestCase {
     }
 
     // MARK: Helpers
+
+    private let navController = UINavigationController()
+    private let spySceneFactory = CharacterExplorerSceneFactorySpy()
+    private lazy var sut = CharacterExplorerRouter(navigationController: navController, sceneFactory: spySceneFactory)
 
     private final class CharacterExplorerSceneFactorySpy: CharacterExplorerSceneFactory {
 
