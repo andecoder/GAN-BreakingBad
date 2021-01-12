@@ -38,6 +38,8 @@
 		73BF3BDF25AD55B700032D18 /* ImageProviderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BDE25AD55B700032D18 /* ImageProviderSpy.swift */; };
 		73BF3BE425AD57E200032D18 /* cached.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3BE325AD57E200032D18 /* cached.png */; };
 		73BF3BEC25AD5BBA00032D18 /* CacheFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BEB25AD5BBA00032D18 /* CacheFileProvider.swift */; };
+		73BF3C0A25AD5D3400032D18 /* MD5HashGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C0925AD5D3400032D18 /* MD5HashGenerator.swift */; };
+		73BF3C0F25AD5D5A00032D18 /* MD5HashGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C0E25AD5D5A00032D18 /* MD5HashGeneratorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		73BF3BDE25AD55B700032D18 /* ImageProviderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProviderSpy.swift; sourceTree = "<group>"; };
 		73BF3BE325AD57E200032D18 /* cached.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cached.png; sourceTree = "<group>"; };
 		73BF3BEB25AD5BBA00032D18 /* CacheFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFileProvider.swift; sourceTree = "<group>"; };
+		73BF3C0925AD5D3400032D18 /* MD5HashGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5HashGenerator.swift; sourceTree = "<group>"; };
+		73BF3C0E25AD5D5A00032D18 /* MD5HashGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5HashGeneratorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +306,7 @@
 				73BF3BD425AD4BB600032D18 /* CacheableImageProvider.swift */,
 				73BF3BB125AD454800032D18 /* ImageProvider.swift */,
 				73BF3BEB25AD5BBA00032D18 /* CacheFileProvider.swift */,
+				73BF3C0925AD5D3400032D18 /* MD5HashGenerator.swift */,
 			);
 			path = ImageProvider;
 			sourceTree = "<group>";
@@ -309,8 +314,9 @@
 		73BF3BB725AD45BD00032D18 /* ImageProvider */ = {
 			isa = PBXGroup;
 			children = (
-				73BF3BB825AD45DC00032D18 /* RemoteImageProviderTests.swift */,
 				73BF3BD925AD54A100032D18 /* CacheableImageProviderTests.swift */,
+				73BF3C0E25AD5D5A00032D18 /* MD5HashGeneratorTests.swift */,
+				73BF3BB825AD45DC00032D18 /* RemoteImageProviderTests.swift */,
 			);
 			path = ImageProvider;
 			sourceTree = "<group>";
@@ -461,6 +467,7 @@
 			files = (
 				73BF3AD925ACE5D900032D18 /* main.swift in Sources */,
 				73BF3B5C25AD377C00032D18 /* CharacterExplorerRouter.swift in Sources */,
+				73BF3C0A25AD5D3400032D18 /* MD5HashGenerator.swift in Sources */,
 				73BF3B8125AD3B8D00032D18 /* CharacterListViewController.swift in Sources */,
 				73BF3B6125AD395300032D18 /* Character.swift in Sources */,
 				73BF3BEC25AD5BBA00032D18 /* CacheFileProvider.swift in Sources */,
@@ -488,6 +495,7 @@
 				73BF3BDA25AD54A100032D18 /* CacheableImageProviderTests.swift in Sources */,
 				73BF3B6725AD398300032D18 /* Character+Helper.swift in Sources */,
 				73BF3B9E25AD427F00032D18 /* URLSession+DataProviderTests.swift in Sources */,
+				73BF3C0F25AD5D5A00032D18 /* MD5HashGeneratorTests.swift in Sources */,
 				73BF3BC225AD465300032D18 /* DataProviderSpy.swift in Sources */,
 				73BF3B8725AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift in Sources */,
 			);
