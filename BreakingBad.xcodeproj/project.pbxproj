@@ -19,6 +19,12 @@
 		73BF3B5C25AD377C00032D18 /* CharacterExplorerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B5B25AD377C00032D18 /* CharacterExplorerRouter.swift */; };
 		73BF3B6125AD395300032D18 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B6025AD395300032D18 /* Character.swift */; };
 		73BF3B6725AD398300032D18 /* Character+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B6625AD398300032D18 /* Character+Helper.swift */; };
+		73BF3B6F25AD3AC100032D18 /* CharacterExplorerSceneComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B6E25AD3AC100032D18 /* CharacterExplorerSceneComposer.swift */; };
+		73BF3B7725AD3B5A00032D18 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B7525AD3B5A00032D18 /* CharacterDetailViewController.swift */; };
+		73BF3B7825AD3B5A00032D18 /* CharacterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3B7625AD3B5A00032D18 /* CharacterDetailViewController.xib */; };
+		73BF3B8125AD3B8D00032D18 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B7F25AD3B8D00032D18 /* CharacterListViewController.swift */; };
+		73BF3B8225AD3B8D00032D18 /* CharacterListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3B8025AD3B8D00032D18 /* CharacterListViewController.xib */; };
+		73BF3B8725AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B8625AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,12 @@
 		73BF3B5B25AD377C00032D18 /* CharacterExplorerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExplorerRouter.swift; sourceTree = "<group>"; };
 		73BF3B6025AD395300032D18 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		73BF3B6625AD398300032D18 /* Character+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Helper.swift"; sourceTree = "<group>"; };
+		73BF3B6E25AD3AC100032D18 /* CharacterExplorerSceneComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExplorerSceneComposer.swift; sourceTree = "<group>"; };
+		73BF3B7525AD3B5A00032D18 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		73BF3B7625AD3B5A00032D18 /* CharacterDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailViewController.xib; sourceTree = "<group>"; };
+		73BF3B7F25AD3B8D00032D18 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
+		73BF3B8025AD3B8D00032D18 /* CharacterListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterListViewController.xib; sourceTree = "<group>"; };
+		73BF3B8625AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExplorerSceneComposerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,10 +142,10 @@
 		73BF3AE125ACE6C800032D18 /* BreakingBadTests */ = {
 			isa = PBXGroup;
 			children = (
-				73BF3B6525AD397600032D18 /* TestHelpers */,
 				73BF3B5125AD371A00032D18 /* CharacterExplorer */,
 				73BF3B3E25AD33BE00032D18 /* Supporting Files */,
 				73BF3B3C25AD33AC00032D18 /* Supporting Files Tests */,
+				73BF3B6525AD397600032D18 /* TestHelpers */,
 			);
 			path = BreakingBadTests;
 			sourceTree = "<group>";
@@ -168,6 +180,7 @@
 			children = (
 				73BF3B6025AD395300032D18 /* Character.swift */,
 				73BF3B5B25AD377C00032D18 /* CharacterExplorerRouter.swift */,
+				73BF3B6E25AD3AC100032D18 /* CharacterExplorerSceneComposer.swift */,
 			);
 			path = SharedObjects;
 			sourceTree = "<group>";
@@ -175,6 +188,8 @@
 		73BF3B5025AD370900032D18 /* CharacterExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				73BF3B7425AD3B1D00032D18 /* CharacterDetail */,
+				73BF3B7325AD3B1500032D18 /* CharacterList */,
 				73BF3B4F25AD36F900032D18 /* SharedObjects */,
 			);
 			path = CharacterExplorer;
@@ -192,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				73BF3B5325AD373700032D18 /* CharacterExplorerRouterTests.swift */,
+				73BF3B8625AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift */,
 			);
 			path = SharedObjects;
 			sourceTree = "<group>";
@@ -202,6 +218,24 @@
 				73BF3B6625AD398300032D18 /* Character+Helper.swift */,
 			);
 			path = TestHelpers;
+			sourceTree = "<group>";
+		};
+		73BF3B7325AD3B1500032D18 /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3B7F25AD3B8D00032D18 /* CharacterListViewController.swift */,
+				73BF3B8025AD3B8D00032D18 /* CharacterListViewController.xib */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
+		73BF3B7425AD3B1D00032D18 /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3B7525AD3B5A00032D18 /* CharacterDetailViewController.swift */,
+				73BF3B7625AD3B5A00032D18 /* CharacterDetailViewController.xib */,
+			);
+			path = CharacterDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,8 +342,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BF3B8225AD3B8D00032D18 /* CharacterListViewController.xib in Resources */,
 				73BF3ACA25ACE4ED00032D18 /* LaunchScreen.storyboard in Resources */,
 				73BF3AC725ACE4ED00032D18 /* Assets.xcassets in Resources */,
+				73BF3B7825AD3B5A00032D18 /* CharacterDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,10 +372,13 @@
 			files = (
 				73BF3AD925ACE5D900032D18 /* main.swift in Sources */,
 				73BF3B5C25AD377C00032D18 /* CharacterExplorerRouter.swift in Sources */,
+				73BF3B8125AD3B8D00032D18 /* CharacterListViewController.swift in Sources */,
 				73BF3B6125AD395300032D18 /* Character.swift in Sources */,
+				73BF3B6F25AD3AC100032D18 /* CharacterExplorerSceneComposer.swift in Sources */,
 				73BF3B3225AD336400032D18 /* AppComposer.swift in Sources */,
 				73BF3B2D25AD327F00032D18 /* LayoutConfigurator.swift in Sources */,
 				73BF3ABE25ACE4EC00032D18 /* AppDelegate.swift in Sources */,
+				73BF3B7725AD3B5A00032D18 /* CharacterDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +389,7 @@
 				73BF3B4025AD33D500032D18 /* AppComposerTests.swift in Sources */,
 				73BF3B5425AD373700032D18 /* CharacterExplorerRouterTests.swift in Sources */,
 				73BF3B6725AD398300032D18 /* Character+Helper.swift in Sources */,
+				73BF3B8725AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
