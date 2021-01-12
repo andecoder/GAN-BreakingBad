@@ -15,6 +15,10 @@
 		73BF3B2D25AD327F00032D18 /* LayoutConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B2C25AD327F00032D18 /* LayoutConfigurator.swift */; };
 		73BF3B3225AD336400032D18 /* AppComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B3125AD336400032D18 /* AppComposer.swift */; };
 		73BF3B4025AD33D500032D18 /* AppComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B3F25AD33D500032D18 /* AppComposerTests.swift */; };
+		73BF3B5425AD373700032D18 /* CharacterExplorerRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B5325AD373700032D18 /* CharacterExplorerRouterTests.swift */; };
+		73BF3B5C25AD377C00032D18 /* CharacterExplorerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B5B25AD377C00032D18 /* CharacterExplorerRouter.swift */; };
+		73BF3B6125AD395300032D18 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B6025AD395300032D18 /* Character.swift */; };
+		73BF3B6725AD398300032D18 /* Character+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B6625AD398300032D18 /* Character+Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		73BF3B2C25AD327F00032D18 /* LayoutConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConfigurator.swift; sourceTree = "<group>"; };
 		73BF3B3125AD336400032D18 /* AppComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComposer.swift; sourceTree = "<group>"; };
 		73BF3B3F25AD33D500032D18 /* AppComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComposerTests.swift; sourceTree = "<group>"; };
+		73BF3B5325AD373700032D18 /* CharacterExplorerRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExplorerRouterTests.swift; sourceTree = "<group>"; };
+		73BF3B5B25AD377C00032D18 /* CharacterExplorerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExplorerRouter.swift; sourceTree = "<group>"; };
+		73BF3B6025AD395300032D18 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		73BF3B6625AD398300032D18 /* Character+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		73BF3ABC25ACE4EC00032D18 /* BreakingBad */ = {
 			isa = PBXGroup;
 			children = (
+				73BF3B5025AD370900032D18 /* CharacterExplorer */,
 				73BF3AD625ACE5B300032D18 /* Supporting Files */,
 			);
 			path = BreakingBad;
@@ -121,6 +130,8 @@
 		73BF3AE125ACE6C800032D18 /* BreakingBadTests */ = {
 			isa = PBXGroup;
 			children = (
+				73BF3B6525AD397600032D18 /* TestHelpers */,
+				73BF3B5125AD371A00032D18 /* CharacterExplorer */,
 				73BF3B3E25AD33BE00032D18 /* Supporting Files */,
 				73BF3B3C25AD33AC00032D18 /* Supporting Files Tests */,
 			);
@@ -150,6 +161,47 @@
 				73BF3AE425ACE6C800032D18 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73BF3B4F25AD36F900032D18 /* SharedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3B6025AD395300032D18 /* Character.swift */,
+				73BF3B5B25AD377C00032D18 /* CharacterExplorerRouter.swift */,
+			);
+			path = SharedObjects;
+			sourceTree = "<group>";
+		};
+		73BF3B5025AD370900032D18 /* CharacterExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3B4F25AD36F900032D18 /* SharedObjects */,
+			);
+			path = CharacterExplorer;
+			sourceTree = "<group>";
+		};
+		73BF3B5125AD371A00032D18 /* CharacterExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3B5225AD372600032D18 /* SharedObjects */,
+			);
+			path = CharacterExplorer;
+			sourceTree = "<group>";
+		};
+		73BF3B5225AD372600032D18 /* SharedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3B5325AD373700032D18 /* CharacterExplorerRouterTests.swift */,
+			);
+			path = SharedObjects;
+			sourceTree = "<group>";
+		};
+		73BF3B6525AD397600032D18 /* TestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3B6625AD398300032D18 /* Character+Helper.swift */,
+			);
+			path = TestHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +335,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BF3AD925ACE5D900032D18 /* main.swift in Sources */,
+				73BF3B5C25AD377C00032D18 /* CharacterExplorerRouter.swift in Sources */,
+				73BF3B6125AD395300032D18 /* Character.swift in Sources */,
 				73BF3B3225AD336400032D18 /* AppComposer.swift in Sources */,
 				73BF3B2D25AD327F00032D18 /* LayoutConfigurator.swift in Sources */,
 				73BF3ABE25ACE4EC00032D18 /* AppDelegate.swift in Sources */,
@@ -294,6 +348,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BF3B4025AD33D500032D18 /* AppComposerTests.swift in Sources */,
+				73BF3B5425AD373700032D18 /* CharacterExplorerRouterTests.swift in Sources */,
+				73BF3B6725AD398300032D18 /* Character+Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
