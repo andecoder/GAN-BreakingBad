@@ -29,6 +29,10 @@
 		73BF3B9525AD423400032D18 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B9425AD423400032D18 /* Cancellable.swift */; };
 		73BF3B9E25AD427F00032D18 /* URLSession+DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B9D25AD427F00032D18 /* URLSession+DataProviderTests.swift */; };
 		73BF3BA725AD435D00032D18 /* URLSessionTest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3BA625AD435D00032D18 /* URLSessionTest.txt */; };
+		73BF3BB225AD454800032D18 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BB125AD454800032D18 /* ImageProvider.swift */; };
+		73BF3BB925AD45DC00032D18 /* RemoteImageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BB825AD45DC00032D18 /* RemoteImageProviderTests.swift */; };
+		73BF3BC225AD465300032D18 /* DataProviderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BC125AD465300032D18 /* DataProviderSpy.swift */; };
+		73BF3BCA25AD466D00032D18 /* CancellableSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BC925AD466D00032D18 /* CancellableSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		73BF3B9425AD423400032D18 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		73BF3B9D25AD427F00032D18 /* URLSession+DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+DataProviderTests.swift"; sourceTree = "<group>"; };
 		73BF3BA625AD435D00032D18 /* URLSessionTest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = URLSessionTest.txt; sourceTree = "<group>"; };
+		73BF3BB125AD454800032D18 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
+		73BF3BB825AD45DC00032D18 /* RemoteImageProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageProviderTests.swift; sourceTree = "<group>"; };
+		73BF3BC125AD465300032D18 /* DataProviderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderSpy.swift; sourceTree = "<group>"; };
+		73BF3BC925AD466D00032D18 /* CancellableSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellableSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				73BF3B8E25AD41EB00032D18 /* DataLayer */,
+				73BF3BB625AD459D00032D18 /* ImageProvider */,
 				73BF3B5B25AD377C00032D18 /* CharacterExplorerRouter.swift */,
 				73BF3B6E25AD3AC100032D18 /* CharacterExplorerSceneComposer.swift */,
 			);
@@ -215,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				73BF3B9C25AD427300032D18 /* DataLayer */,
+				73BF3BB725AD45BD00032D18 /* ImageProvider */,
 				73BF3B5325AD373700032D18 /* CharacterExplorerRouterTests.swift */,
 				73BF3B8625AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift */,
 			);
@@ -224,6 +234,7 @@
 		73BF3B6525AD397600032D18 /* TestHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				73BF3BC025AD464D00032D18 /* Spies */,
 				73BF3BA525AD433600032D18 /* TestData */,
 				73BF3B6625AD398300032D18 /* Character+Helper.swift */,
 			);
@@ -272,6 +283,31 @@
 				73BF3BA625AD435D00032D18 /* URLSessionTest.txt */,
 			);
 			path = TestData;
+			sourceTree = "<group>";
+		};
+		73BF3BB625AD459D00032D18 /* ImageProvider */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3BB125AD454800032D18 /* ImageProvider.swift */,
+			);
+			path = ImageProvider;
+			sourceTree = "<group>";
+		};
+		73BF3BB725AD45BD00032D18 /* ImageProvider */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3BB825AD45DC00032D18 /* RemoteImageProviderTests.swift */,
+			);
+			path = ImageProvider;
+			sourceTree = "<group>";
+		};
+		73BF3BC025AD464D00032D18 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3BC925AD466D00032D18 /* CancellableSpy.swift */,
+				73BF3BC125AD465300032D18 /* DataProviderSpy.swift */,
+			);
+			path = Spies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +454,7 @@
 				73BF3B2D25AD327F00032D18 /* LayoutConfigurator.swift in Sources */,
 				73BF3ABE25ACE4EC00032D18 /* AppDelegate.swift in Sources */,
 				73BF3B7725AD3B5A00032D18 /* CharacterDetailViewController.swift in Sources */,
+				73BF3BB225AD454800032D18 /* ImageProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,9 +463,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BF3B4025AD33D500032D18 /* AppComposerTests.swift in Sources */,
+				73BF3BCA25AD466D00032D18 /* CancellableSpy.swift in Sources */,
 				73BF3B5425AD373700032D18 /* CharacterExplorerRouterTests.swift in Sources */,
+				73BF3BB925AD45DC00032D18 /* RemoteImageProviderTests.swift in Sources */,
 				73BF3B6725AD398300032D18 /* Character+Helper.swift in Sources */,
 				73BF3B9E25AD427F00032D18 /* URLSession+DataProviderTests.swift in Sources */,
+				73BF3BC225AD465300032D18 /* DataProviderSpy.swift in Sources */,
 				73BF3B8725AD3C1D00032D18 /* CharacterExplorerSceneComposerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
