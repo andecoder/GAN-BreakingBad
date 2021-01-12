@@ -40,6 +40,11 @@
 		73BF3BEC25AD5BBA00032D18 /* CacheFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BEB25AD5BBA00032D18 /* CacheFileProvider.swift */; };
 		73BF3C0A25AD5D3400032D18 /* MD5HashGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C0925AD5D3400032D18 /* MD5HashGenerator.swift */; };
 		73BF3C0F25AD5D5A00032D18 /* MD5HashGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C0E25AD5D5A00032D18 /* MD5HashGeneratorTests.swift */; };
+		73BF3C2D25AD5EF900032D18 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C2B25AD5EF900032D18 /* FilterCollectionViewCell.swift */; };
+		73BF3C2E25AD5EF900032D18 /* FilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3C2C25AD5EF900032D18 /* FilterCollectionViewCell.xib */; };
+		73BF3C3725AD5F0700032D18 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C3525AD5F0700032D18 /* CharacterCollectionViewCell.swift */; };
+		73BF3C3825AD5F0700032D18 /* CharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3C3625AD5F0700032D18 /* CharacterCollectionViewCell.xib */; };
+		73BF3C4125AD5FF800032D18 /* CharacterListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C4025AD5FF800032D18 /* CharacterListViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +104,11 @@
 		73BF3BEB25AD5BBA00032D18 /* CacheFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFileProvider.swift; sourceTree = "<group>"; };
 		73BF3C0925AD5D3400032D18 /* MD5HashGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5HashGenerator.swift; sourceTree = "<group>"; };
 		73BF3C0E25AD5D5A00032D18 /* MD5HashGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5HashGeneratorTests.swift; sourceTree = "<group>"; };
+		73BF3C2B25AD5EF900032D18 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		73BF3C2C25AD5EF900032D18 /* FilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCollectionViewCell.xib; sourceTree = "<group>"; };
+		73BF3C3525AD5F0700032D18 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		73BF3C3625AD5F0700032D18 /* CharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCollectionViewCell.xib; sourceTree = "<group>"; };
+		73BF3C4025AD5FF800032D18 /* CharacterListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +239,7 @@
 		73BF3B5125AD371A00032D18 /* CharacterExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				73BF3C3F25AD5FEE00032D18 /* CharacterList */,
 				73BF3B5225AD372600032D18 /* SharedObjects */,
 			);
 			path = CharacterExplorer;
@@ -258,6 +269,7 @@
 		73BF3B7325AD3B1500032D18 /* CharacterList */ = {
 			isa = PBXGroup;
 			children = (
+				73BF3C2A25AD5EDF00032D18 /* Cells */,
 				73BF3B7F25AD3B8D00032D18 /* CharacterListViewController.swift */,
 				73BF3B8025AD3B8D00032D18 /* CharacterListViewController.xib */,
 			);
@@ -329,6 +341,25 @@
 				73BF3BDE25AD55B700032D18 /* ImageProviderSpy.swift */,
 			);
 			path = Spies;
+			sourceTree = "<group>";
+		};
+		73BF3C2A25AD5EDF00032D18 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3C3525AD5F0700032D18 /* CharacterCollectionViewCell.swift */,
+				73BF3C3625AD5F0700032D18 /* CharacterCollectionViewCell.xib */,
+				73BF3C2B25AD5EF900032D18 /* FilterCollectionViewCell.swift */,
+				73BF3C2C25AD5EF900032D18 /* FilterCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		73BF3C3F25AD5FEE00032D18 /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3C4025AD5FF800032D18 /* CharacterListViewControllerTests.swift */,
+			);
+			path = CharacterList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,8 +467,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BF3B8225AD3B8D00032D18 /* CharacterListViewController.xib in Resources */,
+				73BF3C2E25AD5EF900032D18 /* FilterCollectionViewCell.xib in Resources */,
 				73BF3ACA25ACE4ED00032D18 /* LaunchScreen.storyboard in Resources */,
 				73BF3AC725ACE4ED00032D18 /* Assets.xcassets in Resources */,
+				73BF3C3825AD5F0700032D18 /* CharacterCollectionViewCell.xib in Resources */,
 				73BF3B7825AD3B5A00032D18 /* CharacterDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,8 +507,10 @@
 				73BF3B6F25AD3AC100032D18 /* CharacterExplorerSceneComposer.swift in Sources */,
 				73BF3B9525AD423400032D18 /* Cancellable.swift in Sources */,
 				73BF3B9025AD421400032D18 /* DataProvider.swift in Sources */,
+				73BF3C2D25AD5EF900032D18 /* FilterCollectionViewCell.swift in Sources */,
 				73BF3B3225AD336400032D18 /* AppComposer.swift in Sources */,
 				73BF3B2D25AD327F00032D18 /* LayoutConfigurator.swift in Sources */,
+				73BF3C3725AD5F0700032D18 /* CharacterCollectionViewCell.swift in Sources */,
 				73BF3ABE25ACE4EC00032D18 /* AppDelegate.swift in Sources */,
 				73BF3B7725AD3B5A00032D18 /* CharacterDetailViewController.swift in Sources */,
 				73BF3BD525AD4BB600032D18 /* CacheableImageProvider.swift in Sources */,
@@ -491,6 +526,7 @@
 				73BF3BCA25AD466D00032D18 /* CancellableSpy.swift in Sources */,
 				73BF3B5425AD373700032D18 /* CharacterExplorerRouterTests.swift in Sources */,
 				73BF3BDF25AD55B700032D18 /* ImageProviderSpy.swift in Sources */,
+				73BF3C4125AD5FF800032D18 /* CharacterListViewControllerTests.swift in Sources */,
 				73BF3BB925AD45DC00032D18 /* RemoteImageProviderTests.swift in Sources */,
 				73BF3BDA25AD54A100032D18 /* CacheableImageProviderTests.swift in Sources */,
 				73BF3B6725AD398300032D18 /* Character+Helper.swift in Sources */,
