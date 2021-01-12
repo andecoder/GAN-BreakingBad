@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol CharacterListRoutable {
+public protocol CharacterListRoutable {
     func displayDetails(for: Character)
 }
 

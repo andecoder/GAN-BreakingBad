@@ -47,15 +47,6 @@ final class CharacterPresenterTests: XCTestCase {
         return sut
     }
 
-    private final class CharacterListRouterSpy: CharacterListRoutable {
-
-        private(set) var displayedCharacter: Character?
-
-        func displayDetails(for character: Character) {
-            displayedCharacter = character
-        }
-    }
-
     private final class CollectionViewCellProviderSpy: CollectionViewCellProvider<CharacterCollectionViewCell, CharacterCellViewModel> {
 
         private(set) var receivedViewModels: [CharacterCellViewModel] = []
