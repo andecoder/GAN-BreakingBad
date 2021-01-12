@@ -25,11 +25,24 @@ final class CharacterExplorerSceneComposer: CharacterExplorerSceneFactory {
         func searchCharacters(withName: String) { }
     }
 
+    private final class FakeImageProvider: ImageProvider {
+
+        func fetchImage(from url: URL, completion: @escaping (Result<UIImage?, Error>) -> Void) -> Cancellable {
+            return FakeCancellable()
+        }
+    }
+
+    private final class FakeCancellable: Cancellable {
+
+        func cancel() { }
+    }
+
     func makeCharacterListScene() -> UIViewController {
         return CharacterListViewController(characterDataProvider: FakeDataProvider(), filterDataProvider: FakeDataProvider(), interactor: FakeInteractor(), resultsController: UIViewController())
     }
 
     func makeDetailScene(for character: Character) -> UIViewController {
-        return CharacterDetailViewController()
+        let viewModel = CharacterDetailViewModel(name: "", nickName: "", occupation: "", status: "", seasonAppearance: "", imageURL: URL(string: "www.google.com")!, viewCornerRadius: 1)
+        return CharacterDetailViewController(imageProvider: FakeImageProvider(), viewModel: viewModel)
     }
 }

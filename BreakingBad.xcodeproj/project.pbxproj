@@ -69,6 +69,11 @@
 		73BF3CE725AD788E00032D18 /* FilterCollectionViewInteractorAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3CE625AD788E00032D18 /* FilterCollectionViewInteractorAdapterTests.swift */; };
 		73BF3CED25AD79C000032D18 /* FilterPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3CEC25AD79C000032D18 /* FilterPresenterTests.swift */; };
 		73BF3CF525AD809500032D18 /* CharacterPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3CF425AD809500032D18 /* CharacterPresenterTests.swift */; };
+		73BF3CFA25AD860600032D18 /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3CF925AD860600032D18 /* CharacterDetailViewModel.swift */; };
+		73BF3D0225AD86A700032D18 /* CharacterDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D0125AD86A700032D18 /* CharacterDetailViewControllerTests.swift */; };
+		73BF3D0A25AD87C100032D18 /* CharacterDetailsViewModel+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D0925AD87C100032D18 /* CharacterDetailsViewModel+Helper.swift */; };
+		73BF3D1825AD882E00032D18 /* CharacterDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D1725AD882E00032D18 /* CharacterDetailPresenter.swift */; };
+		73BF3D1F25AD884A00032D18 /* CharacterDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D1E25AD884A00032D18 /* CharacterDetailPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +162,11 @@
 		73BF3CE625AD788E00032D18 /* FilterCollectionViewInteractorAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewInteractorAdapterTests.swift; sourceTree = "<group>"; };
 		73BF3CEC25AD79C000032D18 /* FilterPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPresenterTests.swift; sourceTree = "<group>"; };
 		73BF3CF425AD809500032D18 /* CharacterPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenterTests.swift; sourceTree = "<group>"; };
+		73BF3CF925AD860600032D18 /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
+		73BF3D0125AD86A700032D18 /* CharacterDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		73BF3D0925AD87C100032D18 /* CharacterDetailsViewModel+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterDetailsViewModel+Helper.swift"; sourceTree = "<group>"; };
+		73BF3D1725AD882E00032D18 /* CharacterDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenter.swift; sourceTree = "<group>"; };
+		73BF3D1E25AD884A00032D18 /* CharacterDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +297,7 @@
 		73BF3B5125AD371A00032D18 /* CharacterExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				73BF3D0025AD869600032D18 /* CharacterDetail */,
 				73BF3C3F25AD5FEE00032D18 /* CharacterList */,
 				73BF3B5225AD372600032D18 /* SharedObjects */,
 			);
@@ -310,6 +321,7 @@
 				73BF3BC025AD464D00032D18 /* Spies */,
 				73BF3BA525AD433600032D18 /* TestData */,
 				73BF3B6625AD398300032D18 /* Character+Helper.swift */,
+				73BF3D0925AD87C100032D18 /* CharacterDetailsViewModel+Helper.swift */,
 			);
 			path = TestHelpers;
 			sourceTree = "<group>";
@@ -334,8 +346,10 @@
 		73BF3B7425AD3B1D00032D18 /* CharacterDetail */ = {
 			isa = PBXGroup;
 			children = (
+				73BF3D1725AD882E00032D18 /* CharacterDetailPresenter.swift */,
 				73BF3B7525AD3B5A00032D18 /* CharacterDetailViewController.swift */,
 				73BF3B7625AD3B5A00032D18 /* CharacterDetailViewController.xib */,
+				73BF3CF925AD860600032D18 /* CharacterDetailViewModel.swift */,
 			);
 			path = CharacterDetail;
 			sourceTree = "<group>";
@@ -392,13 +406,13 @@
 			isa = PBXGroup;
 			children = (
 				73BF3BC925AD466D00032D18 /* CancellableSpy.swift */,
+				73BF3CC025AD74B000032D18 /* CharacterListChildPresenterSpy.swift */,
 				73BF3C8025AD6AF600032D18 /* CollectionViewCellSpy.swift */,
 				73BF3C8125AD6AF600032D18 /* CollectionViewCellSpy.xib */,
 				73BF3C7625AD6A4F00032D18 /* CollectionViewInteractorSpy.swift */,
 				73BF3BC125AD465300032D18 /* DataProviderSpy.swift */,
 				73BF3BDE25AD55B700032D18 /* ImageProviderSpy.swift */,
 				73BF3C9D25AD6DF800032D18 /* SearchInteractorSpy.swift */,
-				73BF3CC025AD74B000032D18 /* CharacterListChildPresenterSpy.swift */,
 			);
 			path = Spies;
 			sourceTree = "<group>";
@@ -456,6 +470,22 @@
 				73BF3CF425AD809500032D18 /* CharacterPresenterTests.swift */,
 			);
 			path = ChildPresenters;
+			sourceTree = "<group>";
+		};
+		73BF3D0025AD869600032D18 /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3D1E25AD884A00032D18 /* CharacterDetailPresenterTests.swift */,
+				73BF3D0125AD86A700032D18 /* CharacterDetailViewControllerTests.swift */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		73BF3D2825AD895800032D18 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchResult;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,9 +648,11 @@
 				73BF3C8F25AD6C4100032D18 /* CharacterListInteractor.swift in Sources */,
 				73BF3ABE25ACE4EC00032D18 /* AppDelegate.swift in Sources */,
 				73BF3B7725AD3B5A00032D18 /* CharacterDetailViewController.swift in Sources */,
+				73BF3D1825AD882E00032D18 /* CharacterDetailPresenter.swift in Sources */,
 				73BF3CD125AD769100032D18 /* FilterCollectionViewInteractorAdapter.swift in Sources */,
 				73BF3BD525AD4BB600032D18 /* CacheableImageProvider.swift in Sources */,
 				73BF3BB225AD454800032D18 /* ImageProvider.swift in Sources */,
+				73BF3CFA25AD860600032D18 /* CharacterDetailViewModel.swift in Sources */,
 				73BF3CCB25AD75D800032D18 /* CharacterPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,12 +674,15 @@
 				73BF3C4125AD5FF800032D18 /* CharacterListViewControllerTests.swift in Sources */,
 				73BF3BB925AD45DC00032D18 /* RemoteImageProviderTests.swift in Sources */,
 				73BF3CAA25AD70B600032D18 /* CharacterListWorkerTests.swift in Sources */,
+				73BF3D0A25AD87C100032D18 /* CharacterDetailsViewModel+Helper.swift in Sources */,
 				73BF3BDA25AD54A100032D18 /* CacheableImageProviderTests.swift in Sources */,
 				73BF3B6725AD398300032D18 /* Character+Helper.swift in Sources */,
 				73BF3C8225AD6AF600032D18 /* CollectionViewCellSpy.swift in Sources */,
+				73BF3D1F25AD884A00032D18 /* CharacterDetailPresenterTests.swift in Sources */,
 				73BF3B9E25AD427F00032D18 /* URLSession+DataProviderTests.swift in Sources */,
 				73BF3CF525AD809500032D18 /* CharacterPresenterTests.swift in Sources */,
 				73BF3C0F25AD5D5A00032D18 /* MD5HashGeneratorTests.swift in Sources */,
+				73BF3D0225AD86A700032D18 /* CharacterDetailViewControllerTests.swift in Sources */,
 				73BF3C5C25AD649B00032D18 /* CharacterCollectionViewCellTests.swift in Sources */,
 				73BF3BC225AD465300032D18 /* DataProviderSpy.swift in Sources */,
 				73BF3C9925AD6CA000032D18 /* CharacterListInteractorTests.swift in Sources */,
