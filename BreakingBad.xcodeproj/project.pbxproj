@@ -56,6 +56,8 @@
 		73BF3C8F25AD6C4100032D18 /* CharacterListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C8E25AD6C4100032D18 /* CharacterListInteractor.swift */; };
 		73BF3C9925AD6CA000032D18 /* CharacterListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C9825AD6CA000032D18 /* CharacterListInteractorTests.swift */; };
 		73BF3C9E25AD6DF800032D18 /* SearchInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3C9D25AD6DF800032D18 /* SearchInteractorSpy.swift */; };
+		73BF3CA325AD709A00032D18 /* CharacterListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3CA225AD709A00032D18 /* CharacterListWorker.swift */; };
+		73BF3CAA25AD70B600032D18 /* CharacterListWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3CA925AD70B600032D18 /* CharacterListWorkerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,8 @@
 		73BF3C8E25AD6C4100032D18 /* CharacterListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListInteractor.swift; sourceTree = "<group>"; };
 		73BF3C9825AD6CA000032D18 /* CharacterListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListInteractorTests.swift; sourceTree = "<group>"; };
 		73BF3C9D25AD6DF800032D18 /* SearchInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorSpy.swift; sourceTree = "<group>"; };
+		73BF3CA225AD709A00032D18 /* CharacterListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListWorker.swift; sourceTree = "<group>"; };
+		73BF3CA925AD70B600032D18 /* CharacterListWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListWorkerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,10 +296,11 @@
 			isa = PBXGroup;
 			children = (
 				73BF3C2A25AD5EDF00032D18 /* Cells */,
+				73BF3C8E25AD6C4100032D18 /* CharacterListInteractor.swift */,
 				73BF3B7F25AD3B8D00032D18 /* CharacterListViewController.swift */,
 				73BF3B8025AD3B8D00032D18 /* CharacterListViewController.xib */,
+				73BF3CA225AD709A00032D18 /* CharacterListWorker.swift */,
 				73BF3C6525AD652800032D18 /* CollectionViewCellProvider.swift */,
-				73BF3C8E25AD6C4100032D18 /* CharacterListInteractor.swift */,
 			);
 			path = CharacterList;
 			sourceTree = "<group>";
@@ -391,6 +396,7 @@
 				73BF3C4025AD5FF800032D18 /* CharacterListViewControllerTests.swift */,
 				73BF3C6F25AD6A1600032D18 /* CollectionViewCellProviderTests.swift */,
 				73BF3C9825AD6CA000032D18 /* CharacterListInteractorTests.swift */,
+				73BF3CA925AD70B600032D18 /* CharacterListWorkerTests.swift */,
 			);
 			path = CharacterList;
 			sourceTree = "<group>";
@@ -552,6 +558,7 @@
 				73BF3C5625AD642400032D18 /* CharacterCellViewModel.swift in Sources */,
 				73BF3B9525AD423400032D18 /* Cancellable.swift in Sources */,
 				73BF3B9025AD421400032D18 /* DataProvider.swift in Sources */,
+				73BF3CA325AD709A00032D18 /* CharacterListWorker.swift in Sources */,
 				73BF3C2D25AD5EF900032D18 /* FilterCollectionViewCell.swift in Sources */,
 				73BF3B3225AD336400032D18 /* AppComposer.swift in Sources */,
 				73BF3B2D25AD327F00032D18 /* LayoutConfigurator.swift in Sources */,
@@ -576,6 +583,7 @@
 				73BF3C9E25AD6DF800032D18 /* SearchInteractorSpy.swift in Sources */,
 				73BF3C4125AD5FF800032D18 /* CharacterListViewControllerTests.swift in Sources */,
 				73BF3BB925AD45DC00032D18 /* RemoteImageProviderTests.swift in Sources */,
+				73BF3CAA25AD70B600032D18 /* CharacterListWorkerTests.swift in Sources */,
 				73BF3BDA25AD54A100032D18 /* CacheableImageProviderTests.swift in Sources */,
 				73BF3B6725AD398300032D18 /* Character+Helper.swift in Sources */,
 				73BF3C8225AD6AF600032D18 /* CollectionViewCellSpy.swift in Sources */,
