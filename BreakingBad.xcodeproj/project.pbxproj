@@ -33,6 +33,11 @@
 		73BF3BB925AD45DC00032D18 /* RemoteImageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BB825AD45DC00032D18 /* RemoteImageProviderTests.swift */; };
 		73BF3BC225AD465300032D18 /* DataProviderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BC125AD465300032D18 /* DataProviderSpy.swift */; };
 		73BF3BCA25AD466D00032D18 /* CancellableSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BC925AD466D00032D18 /* CancellableSpy.swift */; };
+		73BF3BD525AD4BB600032D18 /* CacheableImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BD425AD4BB600032D18 /* CacheableImageProvider.swift */; };
+		73BF3BDA25AD54A100032D18 /* CacheableImageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BD925AD54A100032D18 /* CacheableImageProviderTests.swift */; };
+		73BF3BDF25AD55B700032D18 /* ImageProviderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BDE25AD55B700032D18 /* ImageProviderSpy.swift */; };
+		73BF3BE425AD57E200032D18 /* cached.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BF3BE325AD57E200032D18 /* cached.png */; };
+		73BF3BEC25AD5BBA00032D18 /* CacheFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3BEB25AD5BBA00032D18 /* CacheFileProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +90,11 @@
 		73BF3BB825AD45DC00032D18 /* RemoteImageProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageProviderTests.swift; sourceTree = "<group>"; };
 		73BF3BC125AD465300032D18 /* DataProviderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderSpy.swift; sourceTree = "<group>"; };
 		73BF3BC925AD466D00032D18 /* CancellableSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellableSpy.swift; sourceTree = "<group>"; };
+		73BF3BD425AD4BB600032D18 /* CacheableImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheableImageProvider.swift; sourceTree = "<group>"; };
+		73BF3BD925AD54A100032D18 /* CacheableImageProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheableImageProviderTests.swift; sourceTree = "<group>"; };
+		73BF3BDE25AD55B700032D18 /* ImageProviderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProviderSpy.swift; sourceTree = "<group>"; };
+		73BF3BE325AD57E200032D18 /* cached.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cached.png; sourceTree = "<group>"; };
+		73BF3BEB25AD5BBA00032D18 /* CacheFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFileProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +290,7 @@
 		73BF3BA525AD433600032D18 /* TestData */ = {
 			isa = PBXGroup;
 			children = (
+				73BF3BE325AD57E200032D18 /* cached.png */,
 				73BF3BA625AD435D00032D18 /* URLSessionTest.txt */,
 			);
 			path = TestData;
@@ -288,7 +299,9 @@
 		73BF3BB625AD459D00032D18 /* ImageProvider */ = {
 			isa = PBXGroup;
 			children = (
+				73BF3BD425AD4BB600032D18 /* CacheableImageProvider.swift */,
 				73BF3BB125AD454800032D18 /* ImageProvider.swift */,
+				73BF3BEB25AD5BBA00032D18 /* CacheFileProvider.swift */,
 			);
 			path = ImageProvider;
 			sourceTree = "<group>";
@@ -297,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				73BF3BB825AD45DC00032D18 /* RemoteImageProviderTests.swift */,
+				73BF3BD925AD54A100032D18 /* CacheableImageProviderTests.swift */,
 			);
 			path = ImageProvider;
 			sourceTree = "<group>";
@@ -306,6 +320,7 @@
 			children = (
 				73BF3BC925AD466D00032D18 /* CancellableSpy.swift */,
 				73BF3BC125AD465300032D18 /* DataProviderSpy.swift */,
+				73BF3BDE25AD55B700032D18 /* ImageProviderSpy.swift */,
 			);
 			path = Spies;
 			sourceTree = "<group>";
@@ -426,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BF3BA725AD435D00032D18 /* URLSessionTest.txt in Resources */,
+				73BF3BE425AD57E200032D18 /* cached.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +463,7 @@
 				73BF3B5C25AD377C00032D18 /* CharacterExplorerRouter.swift in Sources */,
 				73BF3B8125AD3B8D00032D18 /* CharacterListViewController.swift in Sources */,
 				73BF3B6125AD395300032D18 /* Character.swift in Sources */,
+				73BF3BEC25AD5BBA00032D18 /* CacheFileProvider.swift in Sources */,
 				73BF3B6F25AD3AC100032D18 /* CharacterExplorerSceneComposer.swift in Sources */,
 				73BF3B9525AD423400032D18 /* Cancellable.swift in Sources */,
 				73BF3B9025AD421400032D18 /* DataProvider.swift in Sources */,
@@ -454,6 +471,7 @@
 				73BF3B2D25AD327F00032D18 /* LayoutConfigurator.swift in Sources */,
 				73BF3ABE25ACE4EC00032D18 /* AppDelegate.swift in Sources */,
 				73BF3B7725AD3B5A00032D18 /* CharacterDetailViewController.swift in Sources */,
+				73BF3BD525AD4BB600032D18 /* CacheableImageProvider.swift in Sources */,
 				73BF3BB225AD454800032D18 /* ImageProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,7 +483,9 @@
 				73BF3B4025AD33D500032D18 /* AppComposerTests.swift in Sources */,
 				73BF3BCA25AD466D00032D18 /* CancellableSpy.swift in Sources */,
 				73BF3B5425AD373700032D18 /* CharacterExplorerRouterTests.swift in Sources */,
+				73BF3BDF25AD55B700032D18 /* ImageProviderSpy.swift in Sources */,
 				73BF3BB925AD45DC00032D18 /* RemoteImageProviderTests.swift in Sources */,
+				73BF3BDA25AD54A100032D18 /* CacheableImageProviderTests.swift in Sources */,
 				73BF3B6725AD398300032D18 /* Character+Helper.swift in Sources */,
 				73BF3B9E25AD427F00032D18 /* URLSession+DataProviderTests.swift in Sources */,
 				73BF3BC225AD465300032D18 /* DataProviderSpy.swift in Sources */,
