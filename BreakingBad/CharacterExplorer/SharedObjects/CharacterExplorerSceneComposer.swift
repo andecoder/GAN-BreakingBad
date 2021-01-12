@@ -13,36 +13,49 @@ public protocol CharacterListRoutable {
 
 final class CharacterExplorerSceneComposer: CharacterExplorerSceneFactory {
 
-    private final class FakeDataProvider: CollectionViewDataProvider {
+    private let imageProvider: ImageProvider
+    private let remoteDataProvider: DataProvider
 
-        func bind(to: UICollectionView) { }
+    init(imageProvider: ImageProvider, remoteDataProvider: DataProvider) {
+        self.imageProvider = imageProvider
+        self.remoteDataProvider = remoteDataProvider
     }
 
-    private final class FakeInteractor: CharacterListInteractable {
+    func makeCharacterListScene(router: CharacterListRoutable) -> UIViewController {
+        let characterPresenter = CharacterPresenter(imageProvider: imageProvider, router: router)
+        let filterPresenter = FilterPresenter(detailsPresenter: characterPresenter)
+        let searchResultPresenter = SearchResultPresenter(router: router)
+        let presenter = CharacterListPresenter(childPresenters: [filterPresenter, searchResultPresenter])
 
-        func loadCharacters() { }
-
-        func searchCharacters(withName: String) { }
+        let worker = CharacterListWorker(requester: remoteDataProvider)
+        let interactor = CharacterListInteractor(presenter: presenter, searchInteractor: searchResultPresenter, worker: worker)
+        let characterProvider: CollectionViewCellProvider<CharacterCollectionViewCell, CharacterCellViewModel> = makeCharacterProvider(using: Box(characterPresenter))
+        let filterProvider: CollectionViewCellProvider<FilterCollectionViewCell, FilterCellViewModel> = makeFilterProvider(using: Box(filterPresenter))
+        let searchProvider = SearchResultDataSourceImpl()
+        let resultController = SearchResultViewController(interactor: Box(searchResultPresenter), resultsDataSource: searchProvider)
+        let view = CharacterListViewController(characterDataProvider: characterProvider,
+                                               filterDataProvider: filterProvider,
+                                               interactor: interactor,
+                                               resultsController: resultController)
+        presenter.bind(to: Box(view))
+        filterPresenter.bind(to: filterProvider)
+        characterPresenter.bind(to: characterProvider)
+        searchResultPresenter.bind(to: searchProvider)
+        return view
     }
 
-    private final class FakeImageProvider: ImageProvider {
-
-        func fetchImage(from url: URL, completion: @escaping (Result<UIImage?, Error>) -> Void) -> Cancellable {
-            return FakeCancellable()
-        }
+    private func makeCharacterProvider(using interactor: CharacterSelectionInteractable) -> CollectionViewCellProvider<CharacterCollectionViewCell, CharacterCellViewModel> {
+        let collectionViewInteractor = CharacterCollectionViewInteractorAdapter(interactor: interactor)
+        return CollectionViewCellProvider<CharacterCollectionViewCell, CharacterCellViewModel>(interactor: collectionViewInteractor)
     }
 
-    private final class FakeCancellable: Cancellable {
-
-        func cancel() { }
-    }
-
-    func makeCharacterListScene() -> UIViewController {
-        return CharacterListViewController(characterDataProvider: FakeDataProvider(), filterDataProvider: FakeDataProvider(), interactor: FakeInteractor(), resultsController: UIViewController())
+    private func makeFilterProvider(using interactor: FilterSelectionInteractable) -> CollectionViewCellProvider<FilterCollectionViewCell, FilterCellViewModel> {
+        let collectionViewInteractor = FilterCollectionViewInteractorAdapter(interactor: interactor)
+        return CollectionViewCellProvider<FilterCollectionViewCell, FilterCellViewModel>(interactor: collectionViewInteractor)
     }
 
     func makeDetailScene(for character: Character) -> UIViewController {
-        let viewModel = CharacterDetailViewModel(name: "", nickName: "", occupation: "", status: "", seasonAppearance: "", imageURL: URL(string: "www.google.com")!, viewCornerRadius: 1)
-        return CharacterDetailViewController(imageProvider: FakeImageProvider(), viewModel: viewModel)
+        let viewModel = CharacterDetailPresenter.viewModel(for: character)
+        return CharacterDetailViewController(imageProvider: imageProvider, viewModel: viewModel)
     }
 }

@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import BreakingBad
+
+final class CharacterListRouterSpy: CharacterListRoutable {
+
+    private(set) var displayedCharacter: Character?
+
+    func displayDetails(for character: Character) {
+        displayedCharacter = character
+    }
+}

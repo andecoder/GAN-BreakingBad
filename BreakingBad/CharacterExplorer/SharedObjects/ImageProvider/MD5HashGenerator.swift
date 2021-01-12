@@ -8,7 +8,7 @@
 import Foundation
 import CryptoKit
 
-final class MD5HashGenerator {
+final class MD5HashGenerator: HashGenerator {
 
     func hash(_ text: String) -> String {
         guard text.isEmpty == false else {

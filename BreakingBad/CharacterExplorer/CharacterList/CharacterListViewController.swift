@@ -16,7 +16,7 @@ protocol CollectionViewDataProvider {
     func bind(to: UICollectionView)
 }
 
-final class CharacterListViewController: UIViewController {
+final class CharacterListViewController: UIViewController, CharacterListViewable {
 
     @IBOutlet weak var filterLabel: UILabel!
     @IBOutlet weak var filterCollectionView: UICollectionView!

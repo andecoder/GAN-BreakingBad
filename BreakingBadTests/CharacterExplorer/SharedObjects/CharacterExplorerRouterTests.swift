@@ -38,10 +38,11 @@ final class CharacterExplorerRouterTests: XCTestCase {
 
     private final class CharacterExplorerSceneFactorySpy: CharacterExplorerSceneFactory {
 
+        private(set) var receivedRouter: CharacterListRoutable?
         var vcToReturn = UIViewController()
         var displayedCharacter: Character?
 
-        func makeCharacterListScene() -> UIViewController {
+        func makeCharacterListScene(router: CharacterListRoutable) -> UIViewController {
             return vcToReturn
         }
 

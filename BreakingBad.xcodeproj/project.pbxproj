@@ -15,6 +15,7 @@
 		73BF3B2D25AD327F00032D18 /* LayoutConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B2C25AD327F00032D18 /* LayoutConfigurator.swift */; };
 		73BF3B3225AD336400032D18 /* AppComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B3125AD336400032D18 /* AppComposer.swift */; };
 		73BF3B4025AD33D500032D18 /* AppComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B3F25AD33D500032D18 /* AppComposerTests.swift */; };
+		73BF3B4B25AD367400032D18 /* iPhoneDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B4A25AD367400032D18 /* iPhoneDependencyProvider.swift */; };
 		73BF3B5425AD373700032D18 /* CharacterExplorerRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B5325AD373700032D18 /* CharacterExplorerRouterTests.swift */; };
 		73BF3B5C25AD377C00032D18 /* CharacterExplorerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B5B25AD377C00032D18 /* CharacterExplorerRouter.swift */; };
 		73BF3B6125AD395300032D18 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3B6025AD395300032D18 /* Character.swift */; };
@@ -87,6 +88,12 @@
 		73BF3D5B25AD90CE00032D18 /* SearchResultPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D5A25AD90CE00032D18 /* SearchResultPresenterTests.swift */; };
 		73BF3D6325AD912100032D18 /* SearchResultDataSourceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D6225AD912100032D18 /* SearchResultDataSourceSpy.swift */; };
 		73BF3D6825AD91B900032D18 /* CharacterListRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D6725AD91B900032D18 /* CharacterListRouterSpy.swift */; };
+		73BF3D6E25AD97C800032D18 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D6D25AD97C800032D18 /* Box.swift */; };
+		73BF3D7925AD980100032D18 /* Box+SearchResultInteractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D7825AD980100032D18 /* Box+SearchResultInteractable.swift */; };
+		73BF3D8225AD99DA00032D18 /* Box+CharacterListRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D8125AD99DA00032D18 /* Box+CharacterListRoutable.swift */; };
+		73BF3D8925AD9A0000032D18 /* Box+CharacterListViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D8825AD9A0000032D18 /* Box+CharacterListViewable.swift */; };
+		73BF3D9025AD9A6400032D18 /* Box+FilterSelectionInteractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D8F25AD9A6400032D18 /* Box+FilterSelectionInteractable.swift */; };
+		73BF3D9725AD9A9800032D18 /* Box+CharacterSelectionInteractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3D9625AD9A9800032D18 /* Box+CharacterSelectionInteractable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +128,7 @@
 		73BF3B2C25AD327F00032D18 /* LayoutConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConfigurator.swift; sourceTree = "<group>"; };
 		73BF3B3125AD336400032D18 /* AppComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComposer.swift; sourceTree = "<group>"; };
 		73BF3B3F25AD33D500032D18 /* AppComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComposerTests.swift; sourceTree = "<group>"; };
+		73BF3B4A25AD367400032D18 /* iPhoneDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneDependencyProvider.swift; sourceTree = "<group>"; };
 		73BF3B5325AD373700032D18 /* CharacterExplorerRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExplorerRouterTests.swift; sourceTree = "<group>"; };
 		73BF3B5B25AD377C00032D18 /* CharacterExplorerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExplorerRouter.swift; sourceTree = "<group>"; };
 		73BF3B6025AD395300032D18 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
@@ -193,6 +201,12 @@
 		73BF3D5A25AD90CE00032D18 /* SearchResultPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultPresenterTests.swift; sourceTree = "<group>"; };
 		73BF3D6225AD912100032D18 /* SearchResultDataSourceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDataSourceSpy.swift; sourceTree = "<group>"; };
 		73BF3D6725AD91B900032D18 /* CharacterListRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRouterSpy.swift; sourceTree = "<group>"; };
+		73BF3D6D25AD97C800032D18 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		73BF3D7825AD980100032D18 /* Box+SearchResultInteractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Box+SearchResultInteractable.swift"; sourceTree = "<group>"; };
+		73BF3D8125AD99DA00032D18 /* Box+CharacterListRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Box+CharacterListRoutable.swift"; sourceTree = "<group>"; };
+		73BF3D8825AD9A0000032D18 /* Box+CharacterListViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Box+CharacterListViewable.swift"; sourceTree = "<group>"; };
+		73BF3D8F25AD9A6400032D18 /* Box+FilterSelectionInteractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Box+FilterSelectionInteractable.swift"; sourceTree = "<group>"; };
+		73BF3D9625AD9A9800032D18 /* Box+CharacterSelectionInteractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Box+CharacterSelectionInteractable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,8 +269,9 @@
 				73BF3B3125AD336400032D18 /* AppComposer.swift */,
 				73BF3ABD25ACE4EC00032D18 /* AppDelegate.swift */,
 				73BF3AC625ACE4ED00032D18 /* Assets.xcassets */,
-				73BF3AC825ACE4ED00032D18 /* LaunchScreen.storyboard */,
 				73BF3ACB25ACE4ED00032D18 /* Info.plist */,
+				73BF3B4A25AD367400032D18 /* iPhoneDependencyProvider.swift */,
+				73BF3AC825ACE4ED00032D18 /* LaunchScreen.storyboard */,
 				73BF3B2C25AD327F00032D18 /* LayoutConfigurator.swift */,
 				73BF3AD825ACE5D900032D18 /* main.swift */,
 			);
@@ -304,6 +319,7 @@
 			children = (
 				73BF3B8E25AD41EB00032D18 /* DataLayer */,
 				73BF3BB625AD459D00032D18 /* ImageProvider */,
+				73BF3D6C25AD97BD00032D18 /* MemoryManagement */,
 				73BF3B5B25AD377C00032D18 /* CharacterExplorerRouter.swift */,
 				73BF3B6E25AD3AC100032D18 /* CharacterExplorerSceneComposer.swift */,
 			);
@@ -413,8 +429,8 @@
 			isa = PBXGroup;
 			children = (
 				73BF3BD425AD4BB600032D18 /* CacheableImageProvider.swift */,
-				73BF3BB125AD454800032D18 /* ImageProvider.swift */,
 				73BF3BEB25AD5BBA00032D18 /* CacheFileProvider.swift */,
+				73BF3BB125AD454800032D18 /* ImageProvider.swift */,
 				73BF3C0925AD5D3400032D18 /* MD5HashGenerator.swift */,
 			);
 			path = ImageProvider;
@@ -435,6 +451,7 @@
 			children = (
 				73BF3BC925AD466D00032D18 /* CancellableSpy.swift */,
 				73BF3CC025AD74B000032D18 /* CharacterListChildPresenterSpy.swift */,
+				73BF3D6725AD91B900032D18 /* CharacterListRouterSpy.swift */,
 				73BF3C8025AD6AF600032D18 /* CollectionViewCellSpy.swift */,
 				73BF3C8125AD6AF600032D18 /* CollectionViewCellSpy.xib */,
 				73BF3C7625AD6A4F00032D18 /* CollectionViewInteractorSpy.swift */,
@@ -442,7 +459,6 @@
 				73BF3BDE25AD55B700032D18 /* ImageProviderSpy.swift */,
 				73BF3C9D25AD6DF800032D18 /* SearchInteractorSpy.swift */,
 				73BF3D6225AD912100032D18 /* SearchResultDataSourceSpy.swift */,
-				73BF3D6725AD91B900032D18 /* CharacterListRouterSpy.swift */,
 			);
 			path = Spies;
 			sourceTree = "<group>";
@@ -465,12 +481,12 @@
 			children = (
 				73BF3C5A25AD648B00032D18 /* Cells */,
 				73BF3CEB25AD79AB00032D18 /* ChildPresenters */,
-				73BF3C4025AD5FF800032D18 /* CharacterListViewControllerTests.swift */,
-				73BF3C6F25AD6A1600032D18 /* CollectionViewCellProviderTests.swift */,
-				73BF3C9825AD6CA000032D18 /* CharacterListInteractorTests.swift */,
-				73BF3CA925AD70B600032D18 /* CharacterListWorkerTests.swift */,
-				73BF3CB825AD72C400032D18 /* CharacterListPresenterTests.swift */,
 				73BF3CE125AD77B100032D18 /* CharacterCollectionViewInteractorAdapterTests.swift */,
+				73BF3C9825AD6CA000032D18 /* CharacterListInteractorTests.swift */,
+				73BF3CB825AD72C400032D18 /* CharacterListPresenterTests.swift */,
+				73BF3C4025AD5FF800032D18 /* CharacterListViewControllerTests.swift */,
+				73BF3CA925AD70B600032D18 /* CharacterListWorkerTests.swift */,
+				73BF3C6F25AD6A1600032D18 /* CollectionViewCellProviderTests.swift */,
 				73BF3CE625AD788E00032D18 /* FilterCollectionViewInteractorAdapterTests.swift */,
 			);
 			path = CharacterList;
@@ -542,6 +558,19 @@
 				73BF3D5225AD8E0600032D18 /* SearchResultViewControllerTests.swift */,
 			);
 			path = SearchResult;
+			sourceTree = "<group>";
+		};
+		73BF3D6C25AD97BD00032D18 /* MemoryManagement */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3D6D25AD97C800032D18 /* Box.swift */,
+				73BF3D8125AD99DA00032D18 /* Box+CharacterListRoutable.swift */,
+				73BF3D8825AD9A0000032D18 /* Box+CharacterListViewable.swift */,
+				73BF3D9625AD9A9800032D18 /* Box+CharacterSelectionInteractable.swift */,
+				73BF3D8F25AD9A6400032D18 /* Box+FilterSelectionInteractable.swift */,
+				73BF3D7825AD980100032D18 /* Box+SearchResultInteractable.swift */,
+			);
+			path = MemoryManagement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -684,6 +713,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BF3AD925ACE5D900032D18 /* main.swift in Sources */,
+				73BF3D8225AD99DA00032D18 /* Box+CharacterListRoutable.swift in Sources */,
 				73BF3B5C25AD377C00032D18 /* CharacterExplorerRouter.swift in Sources */,
 				73BF3C0A25AD5D3400032D18 /* MD5HashGenerator.swift in Sources */,
 				73BF3B8125AD3B8D00032D18 /* CharacterListViewController.swift in Sources */,
@@ -699,6 +729,7 @@
 				73BF3CA325AD709A00032D18 /* CharacterListWorker.swift in Sources */,
 				73BF3CCA25AD75D800032D18 /* FilterPresenter.swift in Sources */,
 				73BF3C2D25AD5EF900032D18 /* FilterCollectionViewCell.swift in Sources */,
+				73BF3D6E25AD97C800032D18 /* Box.swift in Sources */,
 				73BF3B3225AD336400032D18 /* AppComposer.swift in Sources */,
 				73BF3CCC25AD75D800032D18 /* SearchResultPresenter.swift in Sources */,
 				73BF3CD825AD76B000032D18 /* CharacterCollectionViewInteractorAdapter.swift in Sources */,
@@ -709,7 +740,11 @@
 				73BF3C8F25AD6C4100032D18 /* CharacterListInteractor.swift in Sources */,
 				73BF3ABE25ACE4EC00032D18 /* AppDelegate.swift in Sources */,
 				73BF3B7725AD3B5A00032D18 /* CharacterDetailViewController.swift in Sources */,
+				73BF3D9725AD9A9800032D18 /* Box+CharacterSelectionInteractable.swift in Sources */,
+				73BF3D7925AD980100032D18 /* Box+SearchResultInteractable.swift in Sources */,
 				73BF3D1825AD882E00032D18 /* CharacterDetailPresenter.swift in Sources */,
+				73BF3D9025AD9A6400032D18 /* Box+FilterSelectionInteractable.swift in Sources */,
+				73BF3D8925AD9A0000032D18 /* Box+CharacterListViewable.swift in Sources */,
 				73BF3CD125AD769100032D18 /* FilterCollectionViewInteractorAdapter.swift in Sources */,
 				73BF3BD525AD4BB600032D18 /* CacheableImageProvider.swift in Sources */,
 				73BF3BB225AD454800032D18 /* ImageProvider.swift in Sources */,
@@ -717,6 +752,7 @@
 				73BF3CFA25AD860600032D18 /* CharacterDetailViewModel.swift in Sources */,
 				73BF3CCB25AD75D800032D18 /* CharacterPresenter.swift in Sources */,
 				73BF3D2B25AD8A3400032D18 /* SearchResultViewController.swift in Sources */,
+				73BF3B4B25AD367400032D18 /* iPhoneDependencyProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

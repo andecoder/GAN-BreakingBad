@@ -32,6 +32,7 @@ final class SearchResultViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        resultsDataSource.bind(to: resultTableView)
         resultTableView.dataSource = resultsDataSource
         resultTableView.delegate = self
         resultTableView.registerNib(ofType: SearchResultTableViewCell.self)

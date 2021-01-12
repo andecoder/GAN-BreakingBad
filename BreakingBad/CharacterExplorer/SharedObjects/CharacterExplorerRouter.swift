@@ -8,11 +8,11 @@
 import UIKit
 
 protocol CharacterExplorerSceneFactory {
-    func makeCharacterListScene() -> UIViewController
+    func makeCharacterListScene(router: CharacterListRoutable) -> UIViewController
     func makeDetailScene(for: Character) -> UIViewController
 }
 
-final class CharacterExplorerRouter: Routable {
+final class CharacterExplorerRouter: Routable, CharacterListRoutable {
 
     private let navigationController: UINavigationController
     private let sceneFactory: CharacterExplorerSceneFactory
@@ -27,7 +27,7 @@ final class CharacterExplorerRouter: Routable {
     }
 
     private func displayCharacterList() {
-        let viewController: UIViewController = sceneFactory.makeCharacterListScene()
+        let viewController: UIViewController = sceneFactory.makeCharacterListScene(router: Box(self))
         navigationController.pushViewController(viewController, animated: true)
     }
 

@@ -8,15 +8,22 @@
 import UIKit
 
 public protocol SearchResultDataSource: UITableViewDataSource {
+    func bind(to: UITableView)
     func updateSearchResults(_: [String])
 }
 
 final class SearchResultDataSourceImpl: NSObject, SearchResultDataSource {
 
+    private var view: UITableView?
     private var searchResults: [String] = []
+
+    func bind(to view: UITableView) {
+        self.view = view
+    }
 
     func updateSearchResults(_ searchResults: [String]) {
         self.searchResults = searchResults
+        view?.reloadData()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
