@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol CharacterListRoutable {
+    func displayDetails(for: Character)
+}
+
 final class CharacterExplorerSceneComposer: CharacterExplorerSceneFactory {
 
     private final class FakeDataProvider: CollectionViewDataProvider {

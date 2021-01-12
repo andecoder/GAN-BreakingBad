@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Character: Codable {
+public struct Character: Codable {
 
     enum CodingKeys: String, CodingKey {
         case id = "char_id"
