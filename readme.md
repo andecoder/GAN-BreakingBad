@@ -23,7 +23,7 @@ The app must have the following screens
   - Nickname
   - Season appearance
 
-### Api Endpoint
+### API Endpoint
 - https://breakingbadapi.com/api/characters
 
 ### Notes
@@ -56,7 +56,7 @@ The app must have the following screens
 - **BreakingBadSnapshotTests** - Use this to run only Snapshot tests
 
 ### 3rd Party Dependencies
-There is only 1 3rd party dependency in the project and it has been installed using SPM
+There is only one 3rd party dependency in the project and it has been installed using SPM
 - **PointFreeco's SnapshotTesting**: Used to take snapshots of the view states
 
 ### Code structure
@@ -64,6 +64,7 @@ The app has been written with the principles of clean code and is logically divi
 <img src="https://i.ibb.co/pLHZWwx/Breaking-Bad.png" />
 
 On the presentation layer I have select *Clean Swift* as the design pattern responsible for creating the views and interacting with the required data.
+
 **Note:**
 - I am using my personal variation of the *Clean Swift* design pattern which has the router as a dependency of the interactor instead of the view.
 
