@@ -8,7 +8,8 @@ on:
 
 jobs:
   build:
-
+    env:
+      CODECOV_TOKEN: 4c441680-cabe-4f75-a078-27cda3aa73ef
     runs-on: macos-latest
     strategy:
       matrix:
