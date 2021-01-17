@@ -1,6 +1,8 @@
 # GAN Tech Test
 BreakingBad client to show a list of characters and their details
 
+[![codecov](https://codecov.io/gh/andecoder/GAN-BreakingBad/branch/main/graph/badge.svg?token=DS8QLJXBRX)](https://codecov.io/gh/andecoder/GAN-BreakingBad)
+
 ### Api Links
 - https://breakingbadapi.com/api/characters
 
