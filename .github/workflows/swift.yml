@@ -1,0 +1,25 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    env:
+      CODECOV_TOKEN: 4c441680-cabe-4f75-a078-27cda3aa73ef
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        destination: ['platform=iOS Simulator,OS=14.2,name=iPhone 8']
+    steps:
+    - name: Checkoute
+      uses: actions/checkout@v2
+    - name: Build and test
+      run: |
+        xcodebuild clean test -project BreakingBad.xcodeproj -scheme BreakingBad -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        bash <(curl -s https://codecov.io/bash)
+      env:
+        destination: ${{ matrix.destination }}
